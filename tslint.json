@@ -1,0 +1,42 @@
+{
+  "extends": [
+    "tslint:latest",
+    "tslint-react",
+    "tslint-config-prettier"
+  ],
+  "rules": {
+    "object-literal-sort-keys": false,
+    "variable-name": false,
+    "interface-name": false,
+    "no-implicit-dependencies": false,
+    "class-name": false,
+    "radix": false,
+    "prefer-const": false,
+    // override tslint-react rules here
+    "jsx-key": false,
+    "no-debugger": false,
+    "jsx-wrap-multiline": false,
+    "no-submodule-imports": false,
+    "no-console": false,
+    "no-empty": false,
+    "max-classes-per-file": [
+      false
+    ],
+    "one-variable-per-declaration": false,
+    "no-shadowed-variable": false,
+    "no-bitwise": false,
+    "no-eval": false,
+    "jsx-no-lambda": false,
+    "jsx-no-bind": false,
+    "jsx-no-multiline-js": false,
+    "no-var-requires": false,
+    "no-unused-expression": false,
+    "no-conditional-assignment": false
+  },
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts"
+    ]
+  }
+}

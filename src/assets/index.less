@@ -1,0 +1,52 @@
+@import "//at.alicdn.com/t/font_782607_va9gbgdiopf.css";
+
+html {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  user-select: none;
+}
+
+div {
+  user-select: none;
+}
+
+body {
+  height: 100%;
+  background: #F9F9FC;
+  -webkit-overflow-scrolling: touch;
+  font-weight: 300;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  margin: 0;
+  overflow: hidden;
+  .am-modal-content {
+    background-color: transparent;
+    text-align: left;
+  }
+  .am-list-header {
+    padding: 0;
+  }
+  .am-list-body {
+    background: transparent;
+    &::before {
+      content: none !important;
+    }
+    &::after {
+      content: none !important;
+    }
+  }
+  #react-app {
+    height: 100%;
+    overflow: hidden;
+    > [data-reactroot] {
+      height: 100%;
+      overflow: hidden;
+    }
+    > div:nth-child(1) {
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+}

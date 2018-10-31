@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    "outDir": "build",
+    "module": "esnext",
+    "target": "es5",
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react",
+    "declaration": false,
+    "moduleResolution": "node",
+    "rootDir": "src",
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@core/*": [
+        "core/*"
+      ],
+      "@helper/*": [
+        "helper/*"
+      ],
+      "@assets/*": [
+        "assets/*"
+      ],
+      "@views/*": [
+        "views/*"
+      ],
+      "@routers/*": [
+        "routers/*"
+      ],
+      "@components/*": [
+        "components/*"
+      ],
+      "@common/*": [
+        "common/*"
+      ],
+      "@lib/*": [
+        "/lib/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "webpack"
+  ]
+}
